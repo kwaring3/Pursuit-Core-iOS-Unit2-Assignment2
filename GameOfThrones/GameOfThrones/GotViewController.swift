@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GotViewController: UIViewController {
     
     var episodes = GOTEpisode.allEpisodes
     var array = [[GOTEpisode]]()
@@ -39,14 +39,14 @@ class ViewController: UIViewController {
     
     
 }
-extension ViewController: UITableViewDelegate {
+extension GotViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
 }
 
 
-extension ViewController: UITableViewDataSource{
+extension GotViewController: UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return array.count
     }
